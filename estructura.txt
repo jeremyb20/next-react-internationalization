@@ -1,0 +1,59 @@
+.
+├── eslint.config.mjs
+├── estructura.txt
+├── middleware.ts
+├── next.config.ts
+├── next-env.d.ts
+├── next-i18next.config.js
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   ├── favicon.ico
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── locales
+│   │   ├── translation.en.json
+│   │   ├── translation.es.json
+│   │   ├── translation.pt-BR.json
+│   │   ├── translation.pt.json
+│   │   └── translation.zh.json
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── README.md
+├── src
+│   ├── components
+│   │   └── LanguageSwitcher.tsx
+│   ├── pages
+│   │   ├── api
+│   │   │   └── hello.ts
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── games
+│   │   │   └── index.tsx
+│   │   └── index.tsx
+│   ├── styles
+│   │   └── globals.css
+│   └── utils
+│       └── i18n.ts
+└── tsconfig.json
+
+10 directories, 30 files
+
+"aws-amplify": "^6.0.6", // tiene 20 high severity vulnerabilities
+
+"react-joyride": "^2.7.1", // 
+//  npm error Could not resolve dependency:
+//  npm error peer react@"15 - 18" from react-joyride@2.9.3
+
+
+"react-quill": "^2.0.0", //  se necesita 
+
+//  npm error   react@"^19.2.4" from the root project
+//  npm error
+//  npm error Could not resolve dependency:
+//  npm error peer react@"^16 || ^17 || ^18" from react-quill@2.0.0
+
+"eslint-config-airbnb": "^19.0.4",
+"eslint-config-airbnb-typescript": "^17.1.0",

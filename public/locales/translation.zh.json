@@ -1,0 +1,8 @@
+{
+  "welcome": "歡迎來到我們的網站",
+  "description": "這是一個使用 Next.js 實現國際化的範例",
+  "games_link": "前往遊戲",
+  "games_title": "遊戲",
+  "games_description": "查看我們精彩的遊戲收藏",
+  "back_home": "返回首頁"
+}

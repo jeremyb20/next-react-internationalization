@@ -1,0 +1,8 @@
+{
+  "welcome": "Bem-vindo ao nosso site",
+  "description": "Este é um exemplo de internacionalização com Next.js",
+  "games_link": "Ir para Jogos",
+  "games_title": "Jogos",
+  "games_description": "Confira nossa incrível coleção de jogos",
+  "back_home": "Voltar para Home"
+}

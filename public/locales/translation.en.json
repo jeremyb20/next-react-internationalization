@@ -1,0 +1,8 @@
+{
+  "welcome": "Welcome to our website",
+  "description": "This is an example of internationalization with Next.js",
+  "games_link": "Go to Games",
+  "games_title": "Games",
+  "games_description": "Check out our amazing games collection",
+  "back_home": "Back to Home"
+}
