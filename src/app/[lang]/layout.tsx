@@ -1,6 +1,6 @@
 // app/[lang]/layout.tsx
 import { ReactNode } from "react";
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import { isLocale, locales } from "@/i18n/config";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -20,7 +20,7 @@ export default async function LangLayout({
   const { lang } = await Promise.resolve(params);
 
   if (!isLocale(lang)) {
-    notFound();
+    redirect("/en");
   }
 
   return (

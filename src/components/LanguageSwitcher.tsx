@@ -31,10 +31,7 @@ export default function LanguageSwitcher({
     });
 
     // Construir nueva ruta
-    let newPath = pathWithoutLocale;
-    if (lng !== "es") {
-      newPath = `/${lng}${pathWithoutLocale}`;
-    }
+    let newPath = `/${lng}${pathWithoutLocale}`;
 
     // Asegurar que la ruta no termine con doble slash
     newPath = newPath.replace(/\/\//g, "/");

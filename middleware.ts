@@ -27,13 +27,6 @@ export function middleware(request: NextRequest) {
   );
 
   if (pathHasLocale) {
-    // Si el locale es "es", lo quitamos de la URL
-    if (pathname.startsWith("/es/") || pathname === "/es") {
-      const newPathname = pathname.replace(/^\/es/, "") || "/";
-      return NextResponse.redirect(new URL(newPathname, request.url));
-    }
-
-    // Para otros locales, mantenemos la URL tal cual
     return NextResponse.next();
   }
 

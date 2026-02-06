@@ -1,5 +1,5 @@
 import AppProviders from "@/components/AppProviders";
-
+import { getServerLanguage } from "@/utils/get-server-language";
 // ----------------------------------------------------------------------
 
 type Props = {
@@ -7,11 +7,10 @@ type Props = {
   params: Promise<{ lang: string }>;
 };
 
-export default async function RootLayout({ children, params }: Props) {
-  const { lang } = await params;
-
+export default async function RootLayout({ children }: Props) {
+  const language = await getServerLanguage();
   return (
-    <html lang={lang} translate="no">
+    <html lang={language.toLowerCase() || "es"} translate="no">
       <head>
         {/* Viewport - importante para SEO móvil */}
         <meta
