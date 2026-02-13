@@ -4,7 +4,6 @@ import { getServerLanguage } from "@/utils/get-server-language";
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
 };
 
 export default async function RootLayout({ children }: Props) {
