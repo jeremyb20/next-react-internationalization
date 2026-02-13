@@ -22,7 +22,8 @@ export default function TranslatedLink({
   const currentLang = (params?.lang as string) || i18n.language;
 
   // Si el idioma actual es español, no agregamos locale a la URL
-  const localizedHref = currentLang === "es" ? href : `/${currentLang}${href}`;
+  // const localizedHref = currentLang === "es" ? href : `/${currentLang}${href}`;
+  const localizedHref = `/${currentLang}${href}`;
 
   return (
     <MuiLink
